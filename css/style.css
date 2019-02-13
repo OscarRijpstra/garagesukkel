@@ -256,7 +256,7 @@ nav a{
         border-radius: 0.1em;
     }
 
-    nav a:not(.bigbutton):hover::after{
+    nav a:not(.bigbutton):hover::after, nav a.current{
         width: 100%;
         left: 0;
         opacity: 1;
