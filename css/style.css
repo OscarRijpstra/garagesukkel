@@ -23,7 +23,7 @@ h3{
 
 h1, h2, h3{
     font-weight: 400;
-    color: #d5544f;
+    color: #bc2c2e;
     margin: 0.5em 0;
 }
 
@@ -95,7 +95,7 @@ nav{
 
 header .bar{
     height: 5em;
-    border-bottom: 1px solid #d5544f;
+    border-bottom: 1px solid #bc2c2e;
 }
 
 header .hamburger{
@@ -106,13 +106,13 @@ header .hamburger{
 
 header .hamburger div{
     padding: 0.12em 0.9em;
-    background-color: #d5544f;
+    background-color: #bc2c2e;
     margin: 0.2em 0;
 }
 
 nav a{
     text-decoration: none;
-    color: #d5544f;
+    color: #bc2c2e;
     padding-bottom: 0.3em;
     position: relative;
     margin: 0.5em 1em;
