@@ -23,7 +23,7 @@ h3{
 
 h1, h2, h3{
     font-weight: 400;
-    color: #bc2c2e;
+    color: #d5544f;
     margin: 0.5em 0;
 }
 
@@ -76,7 +76,7 @@ header .logo img{
     display: block;
 }
 
-header nav{
+nav{
     transition: max-height .4s, padding .4s;
     -webkit-transition: max-height .4s, padding .4s, opacity .4s;
     -moz-transition: max-height .4s, padding .4s, opacity .4s;
@@ -95,7 +95,7 @@ header nav{
 
 header .bar{
     height: 5em;
-    border-bottom: 1px solid #bc2c2e;
+    border-bottom: 1px solid #d5544f;
 }
 
 header .hamburger{
@@ -106,13 +106,13 @@ header .hamburger{
 
 header .hamburger div{
     padding: 0.12em 0.9em;
-    background-color: #bc2c2e;
+    background-color: #d5544f;
     margin: 0.2em 0;
 }
 
-header nav a{
+nav a{
     text-decoration: none;
-    color: #bc2c2e;
+    color: #d5544f;
     padding-bottom: 0.3em;
     position: relative;
     margin: 0.5em 1em;
@@ -192,11 +192,11 @@ header nav a{
 }
 
 @media only screen and (max-width: 899px) {
-    header nav {
+    nav {
         max-height: 30em;
     }
 
-    header #shownav:checked  ~ nav{
+    #shownav:checked  ~ nav{
         max-height: 0;
         padding: 0 1em;
         opacity: 0;
@@ -227,7 +227,7 @@ header nav a{
         display: none;
     }
 
-    header nav{
+    nav{
         display: block;
         opacity: 1;
         flex: 1;
@@ -238,13 +238,13 @@ header nav a{
         align-items: center;
     }
 
-    header nav a{
+    nav a{
         text-align: center;
         width: unset;
         display: inline-block;
     }
 
-    header nav a::after{
+    nav a::after{
         border-bottom: 0.15em solid;
         content: "";
         position: absolute;
@@ -256,7 +256,7 @@ header nav a{
         border-radius: 0.1em;
     }
 
-    header nav a:not(.bigbutton):hover::after, header nav a.current::after{
+    nav a:not(.bigbutton):hover::after{
         width: 100%;
         left: 0;
         opacity: 1;
