@@ -118,6 +118,8 @@ header .hamburger div{
 }
 
 footer{
+    font-size: 11pt;
+    padding: 0.5em;
     text-align: center;
     display: block;
     position: absolute;
@@ -178,7 +180,7 @@ nav a{
 .items > div{
     flex: 1;
     margin: 0.5em;
-    min-width: 20em;
+    min-width: 15em;
 }
 
 .items > div img{
