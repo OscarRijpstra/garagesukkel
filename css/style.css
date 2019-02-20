@@ -202,10 +202,10 @@ nav a{
     margin: 0.5em 0;
 }
 
-.items .openingstijd{
+/* .items .openingstijd{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 0 0.5em;
 }
 
 .items .openingstijd p{
@@ -216,11 +216,41 @@ nav a{
 
 .items .openingstijd p:last-child{
     max-width: 8em;
+} */
+
+.contact{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60em;
+    margin: 0 auto;
 }
 
-.bigbutton.reserve{
-    padding: 0.5em 1em 0.6em;
-    margin: 0 1em 0.3em;
+.contact > div{
+    display: inline-flex;
+    flex-direction: column;
+    /* max-width: 25em; */
+    flex: 1;
+    margin: 0 0.5em;
+}
+
+.contact .openingstijd{
+    display: flex;
+    margin: 0.5em 0;
+    min-width: 15em;
+}
+
+.contact .openingstijd > p, .contact .openingstijd div{
+    display: inline-block;
+}
+
+.contact .openingstijd p{
+    flex: 1;
+    margin: 0;
+}
+
+.contact .openingstijd div{
+    vertical-align: top;
 }
 
 @media only screen and (max-width: 899px) {
