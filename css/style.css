@@ -14,7 +14,7 @@ a{
 }
 
 h2{
-    font-size: 24pt;
+    font-size: 22pt;
 }
 
 h3{
@@ -23,12 +23,15 @@ h3{
 
 h1, h2, h3{
     font-weight: 400;
-    color: #394fd9;
     margin: 0.5em 0;
 }
 
 .center{
     text-align: center;
+}
+
+a.black{
+    color: #000;
 }
 
 a.bigbutton{
@@ -163,8 +166,7 @@ nav a{
 .items > div{
     flex: 1;
     margin: 0.5em;
-    background-color: #faf8f3;
-    min-width: 19em;
+    min-width: 20em;
 }
 
 .items > div img{
@@ -172,8 +174,8 @@ nav a{
     display: block;
 }
 
-.items > div > div{
-    padding: 1em 1.5em;
+.items > div{
+    margin: 1em;
 }
 
 .items h3{
@@ -184,6 +186,22 @@ nav a{
 .items p{
     line-height: 1.3em;
     margin: 0.5em 0;
+}
+
+.items .openingstijd{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.items .openingstijd p{
+    display: inline-block;
+    vertical-align: top;
+    flex: 1;
+}
+
+.items .openingstijd p:last-child{
+    max-width: 8em;
 }
 
 .bigbutton.reserve{
