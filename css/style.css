@@ -34,6 +34,10 @@ a.black{
     color: #000;
 }
 
+a.blue{
+    color: #2f90e6;
+}
+
 a.bigbutton{
     background-color: #b48826;
     padding: 0.7em;
@@ -111,6 +115,14 @@ header .hamburger div{
     padding: 0.12em 0.9em;
     background-color: #bc2c2e;
     margin: 0.2em 0;
+}
+
+footer{
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 nav a{
