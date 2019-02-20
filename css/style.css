@@ -84,11 +84,11 @@ header .logo img{
 }
 
 nav{
-    transition: max-height .4s, padding .4s;
-    -webkit-transition: max-height .4s, padding .4s, opacity .4s;
-    -moz-transition: max-height .4s, padding .4s, opacity .4s;
-    -o-transition: max-height .4s, padding .4s, opacity .4s;
-    -ms-transition: max-height .4s, padding .4s, opacity .4s;
+    transition: max-height .4s, opacity .4s;
+    -webkit-transition: max-height .4s, opacity .4s;
+    -moz-transition: max-height .4s,  opacity .4s;
+    -o-transition: max-height .4s, opacity .4s;
+    -ms-transition: max-height .4s, opacity .4s;
     opacity: 1;
     position: absolute;
     display: flex;
@@ -96,14 +96,29 @@ nav{
     z-index: 10;
     background-color: #fff;
     overflow: hidden;
-    padding: 1em;
     width: 100%;
+}
+
+nav a{
+    transition: padding .4s;
+    -webkit-transition: padding .4s;
+    -moz-transition: padding .4s;
+    -o-transition: padding .4s;
+    -ms-transition: padding .4s;
+    text-decoration: none;
+    color: #bc2c2e;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    font-weight: 600;
 }
 
 header .bar{
     height: 5em;
     border-bottom: 1px solid #bc2c2e;
 }
+
 
 header .hamburger{
     float: right;
@@ -125,17 +140,6 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-nav a{
-    text-decoration: none;
-    color: #bc2c2e;
-    padding-bottom: 0.3em;
-    position: relative;
-    margin: 0.5em 1em;
-    display: block;
-    width: 100%;
-    font-weight: 600;
 }
 
 .banner{
@@ -202,22 +206,6 @@ nav a{
     margin: 0.5em 0;
 }
 
-/* .items .openingstijd{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 0.5em;
-}
-
-.items .openingstijd p{
-    display: inline-block;
-    vertical-align: top;
-    flex: 1;
-}
-
-.items .openingstijd p:last-child{
-    max-width: 8em;
-} */
-
 .contact{
     justify-content: center;
     display: flex;
@@ -260,8 +248,11 @@ nav a{
 
     #shownav:checked  ~ nav{
         max-height: 0;
-        padding: 0 1em;
         opacity: 0;
+    }
+
+    #shownav:checked  ~ nav a{
+        padding: 0 1em;
     }
 
     .desktop{
