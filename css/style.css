@@ -295,6 +295,8 @@ footer{
         text-align: center;
         width: unset;
         display: inline-block;
+        margin: 0 1em;
+        padding: 0.5em 0;
     }
 
     nav a::after{
