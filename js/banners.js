@@ -16,4 +16,4 @@ function newBanner(){
     }
 }
 
-setInterval(newBanner, 3000);
+setInterval(newBanner, 6000);
