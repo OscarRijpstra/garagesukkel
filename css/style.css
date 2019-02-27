@@ -203,34 +203,22 @@ footer{
 .items{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     max-width: 70em;
-    margin: 1em auto;
-}
-
-.items > div{
-    flex: 1;
-    margin: 0.5em;
-    min-width: 15em;
-}
-
-.items > div img{
-    width: 100%;
-    display: block;
-}
-
-.items > div{
     margin: 1em;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.items h3{
-    font-size: 14pt;
-    margin: 0;
+.items div{
+    min-width: 10em;
+    margin: 0.1em;
+    flex: 1;
+    flex-basis: 25%;
 }
 
-.items p{
-    line-height: 1.3em;
-    margin: 0.5em 0;
+.items img{
+    width: 100%;
+    display: flex;
 }
 
 .contact{
@@ -244,9 +232,8 @@ footer{
 .contact > div{
     display: inline-flex;
     flex-direction: column;
-    /* max-width: 25em; */
     flex: 1;
-    margin: 0 0.5em;
+    margin: 0 1em;
 }
 
 .contact .openingstijd{
@@ -353,6 +340,11 @@ footer{
     }
 
     .items{
+        margin: 1em auto;
         flex-direction: row;
+    }
+
+    .items div{
+        max-width: 15em;
     }
 }
