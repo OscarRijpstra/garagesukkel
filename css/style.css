@@ -132,14 +132,22 @@ header .hamburger div{
     margin: 0.2em 0;
 }
 
-footer{
+.footer{
     font-size: 11pt;
-    padding: 0.5em;
     text-align: center;
     display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer__link {
+    color: #2f90e6;    
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 #banners{
@@ -253,6 +261,10 @@ footer{
 
 .contact .openingstijd div{
     vertical-align: top;
+}
+
+.main {
+    min-height: calc(100vh - 9.8em);
 }
 
 @media only screen and (max-width: 899px) {
