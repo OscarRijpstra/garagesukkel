@@ -132,7 +132,8 @@ header .hamburger div{
     margin: 0.2em 0;
 }
 
-.footer{
+.footer {
+    margin: 0.5em 0;
     font-size: 11pt;
     text-align: center;
     display: block;
@@ -264,7 +265,7 @@ header .hamburger div{
 }
 
 .main {
-    min-height: calc(100vh - 9.8em);
+    min-height: calc(100vh - 10.4em);
 }
 
 @media only screen and (max-width: 899px) {
