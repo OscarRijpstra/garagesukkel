@@ -134,7 +134,7 @@ header .hamburger div{
 
 .footer {
     margin: 0.5em 0;
-    font-size: 11pt;
+    font-size: 1rem;
     text-align: center;
     display: block;
 }
@@ -151,27 +151,29 @@ header .hamburger div{
     text-decoration: underline;
 }
 
-#banners{
-    overflow: hidden;
+.slider {
     position: relative;
+    overflow-x: hidden;
 }
 
-#banners div.new{
+.slider__item.new{
+    position: relative;
     opacity: 1;
     transform: translateX(0);
+    z-index: 5;
 }
 
-#banners div.old{
+.slider__item.old{
     transform: translateX(-100%);
     opacity: 1;
+    z-index: 5;
 }
 
-#banners div:not(.new){
+.slider__item {
     position: absolute;
-}
-
-#banners div{
     top: 0;
+    display: block;
+    width: 100%;
     overflow: hidden;
     opacity: 0;
     transform: translateX(100%);
@@ -182,18 +184,29 @@ header .hamburger div{
     -ms-transition: transform .6s;
 }
 
-#banners img{
+
+/* #sliders{
+    overflow: hidden;
+    position: relative;
+}
+
+
+#sliders div:not(.new){
+    position: absolute;
+}
+
+#sliders img{
     display: block;
     width: 200%;
     transform: translateX(-30%);
 }
 
-#banners .overlay{
+#sliders .overlay{
     position: absolute;
     bottom: 0;
     z-index: 3;
 }
-
+ */
 #reservebutton{
     display: block;
 }
@@ -294,7 +307,7 @@ header .hamburger div{
         align-items: center;
     }
 
-    #banners img {
+    #sliders img {
         width: 100%;
         transform: none;
     }
