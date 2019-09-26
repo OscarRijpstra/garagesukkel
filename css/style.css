@@ -184,29 +184,6 @@ header .hamburger div{
     -ms-transition: transform .6s;
 }
 
-
-/* #sliders{
-    overflow: hidden;
-    position: relative;
-}
-
-
-#sliders div:not(.new){
-    position: absolute;
-}
-
-#sliders img{
-    display: block;
-    width: 200%;
-    transform: translateX(-30%);
-}
-
-#sliders .overlay{
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
-}
- */
 #reservebutton{
     display: block;
 }
