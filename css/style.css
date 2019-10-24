@@ -386,3 +386,9 @@ header .hamburger div {
         grid-gap: 2rem;
     }
 }
+
+@media screen and (orientation:landscape) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
