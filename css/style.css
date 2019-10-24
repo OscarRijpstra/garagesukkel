@@ -151,25 +151,25 @@ header .hamburger div{
     text-decoration: underline;
 }
 
-.slider {
+.sliders {
     position: relative;
     overflow-x: hidden;
 }
 
-.slider__item.new{
+.sliders__item.new{
     position: relative;
     opacity: 1;
     transform: translateX(0);
     z-index: 5;
 }
 
-.slider__item.old{
+.sliders__item.old{
     transform: translateX(-100%);
     opacity: 1;
     z-index: 5;
 }
 
-.slider__item {
+.sliders__item {
     position: absolute;
     top: 0;
     display: block;
