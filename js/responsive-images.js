@@ -11,7 +11,7 @@ responsiveImages.map(function (container) {
 
     switch (type) {
         case 'slider':
-            renderImage(container, publicID, alt, imgClass, 50, ['webp', 'wdp', 'jp2', 'jpg'], {
+            renderImage(container, publicID, alt, imgClass, 30, ['webp', 'wdp', 'jp2', 'jpg'], {
                 mobile: [
                     [500, 500],
                     [600, 500],
@@ -34,6 +34,28 @@ responsiveImages.map(function (container) {
                     [1800, 700],
                     [1900, 700],
                     [2000, 700]
+                ]
+            });
+            break;
+
+        case 'vertical-rowimg':
+            renderImage(container, publicID, alt, imgClass, 10, ['webp', 'wdp', 'jp2', 'jpg'], {
+                mobile: [
+                    [500, 700],
+                    [600, 800],
+                    [700, 900],
+                    [800, 1000],
+                    [900, 1100],
+                    [1000, 1200],
+                    [1100, 1300],
+                    [1200, 1400]
+                ],
+                desktop: [
+                    [500, 700],
+                    [600, 800],
+                    [700, 900],
+                    [800, 1000],
+                    [900, 1100]
                 ]
             });
             break;

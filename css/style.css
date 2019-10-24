@@ -1,7 +1,10 @@
-body{
+body {
     margin: 0;
     font-size: 12pt;
     font-family: 'Titillium Web', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -9,36 +12,41 @@ body{
     box-sizing: border-box;
 }
 
-a{
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
     text-decoration: none;
 }
 
-h2{
+h2 {
     font-size: 22pt;
 }
 
-h3{
+h3 {
     font-size: 16pt;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     font-weight: 400;
     margin: 0.5em 0;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-a.black{
+a.black {
     color: #000;
 }
 
-a.blue{
+a.blue {
     color: #2f90e6;
 }
 
-a.bigbutton{
+a.bigbutton {
     background-color: #b48826;
     padding: 0.7em;
     color: #fff;
@@ -51,15 +59,15 @@ a.bigbutton{
     -ms-transition: background-color .2s;
 }
 
-a.bigbutton:hover{
+a.bigbutton:hover {
     background-color: #bf9c4c;
 }
 
-input[type="checkbox"].hidden{
+input[type="checkbox"].hidden {
     display: none;
 }
 
-header{
+header {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -70,23 +78,23 @@ header{
     background-color: #fff;
 }
 
-header .logo{
+header .logo {
     height: 100%;
     display: inline-block;
     position: absolute;
     z-index: 11;
 }
 
-header .logo img{
+header .logo img {
     height: 100%;
     padding: 0.8em;
     display: block;
 }
 
-nav{
+nav {
     transition: max-height .4s, opacity .4s;
     -webkit-transition: max-height .4s, opacity .4s;
-    -moz-transition: max-height .4s,  opacity .4s;
+    -moz-transition: max-height .4s, opacity .4s;
     -o-transition: max-height .4s, opacity .4s;
     -ms-transition: max-height .4s, opacity .4s;
     opacity: 1;
@@ -99,7 +107,7 @@ nav{
     width: 100%;
 }
 
-nav a{
+nav a {
     transition: padding .4s;
     -webkit-transition: padding .4s;
     -moz-transition: padding .4s;
@@ -114,27 +122,26 @@ nav a{
     font-weight: 600;
 }
 
-header .bar{
+header .bar {
     height: 5em;
     border-bottom: 1px solid #bc2c2e;
 }
 
-
-header .hamburger{
+header .hamburger {
     float: right;
     height: 100%;
     padding: 1.7em;
 }
 
-header .hamburger div{
+header .hamburger div {
     padding: 0.12em 0.9em;
     background-color: #bc2c2e;
     margin: 0.2em 0;
 }
 
 .footer {
-    margin: 0.5em 0;
-    font-size: 1rem;
+    margin: auto 1rem 1rem;
+    font-size: 0.9rem;
     text-align: center;
     display: block;
 }
@@ -144,7 +151,7 @@ header .hamburger div{
 }
 
 .footer__link {
-    color: #1A237E;
+    color: #bc2c2e;
 }
 
 .footer__link:hover {
@@ -156,14 +163,14 @@ header .hamburger div{
     overflow-x: hidden;
 }
 
-.sliders__item.new{
+.sliders__item.new {
     position: relative;
     opacity: 1;
     transform: translateX(0);
     z-index: 5;
 }
 
-.sliders__item.old{
+.sliders__item.old {
     transform: translateX(-100%);
     opacity: 1;
     z-index: 5;
@@ -184,22 +191,22 @@ header .hamburger div{
     -ms-transition: transform .6s;
 }
 
-#reservebutton{
+#reservebutton {
     display: block;
 }
 
-.home-content{
+.home-content {
     display: flex;
     margin: 0.5em 1em;
     flex-direction: column;
 }
 
-.home-content h2, .home-content h3{
+.home-content h2, .home-content h3 {
     display: inline-block;
     margin: 0.5em auto;
 }
 
-.items{
+.items {
     display: flex;
     flex-wrap: wrap;
     max-width: 70em;
@@ -208,19 +215,19 @@ header .hamburger div{
     flex-direction: column;
 }
 
-.items div{
+.items div {
     min-width: 10em;
     margin: 0.1em;
     flex: 1;
     flex-basis: 25%;
 }
 
-.items img{
+.items img {
     width: 100%;
     display: flex;
 }
 
-.contact{
+.contact {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -228,76 +235,105 @@ header .hamburger div{
     margin: 0 auto;
 }
 
-.contact > div{
+.contact>div {
     display: inline-flex;
     flex-direction: column;
     flex: 1;
     margin: 0 1em;
 }
 
-.contact .openingstijd{
+.contact .openingstijd {
     display: flex;
     margin: 0.5em 0;
     min-width: 15em;
 }
 
-.contact .openingstijd > p, .contact .openingstijd div{
+.contact .openingstijd>p, .contact .openingstijd div {
     display: inline-block;
 }
 
-.contact .openingstijd p{
+.contact .openingstijd p {
     flex: 1;
     margin: 0;
 }
 
-.contact .openingstijd div{
+.contact .openingstijd div {
     vertical-align: top;
 }
 
 .main {
-    min-height: calc(100vh - 10.4em);
+    /* min-height: calc(100vh - 10.4em); */
+}
+
+.page__title {
+    margin: 2rem 0.5rem;
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
+    margin: 2rem 0.5rem;
+}
+
+.row {
+    width: calc(100% - 2rem);
+    margin: 3rem auto;
+    max-width: 60rem;
+}
+
+.row__textblock {}
+
+.row__textblock-title {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.row__textblock-text {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.row__textblock-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
 }
 
 @media only screen and (max-width: 899px) {
     nav {
         max-height: 30em;
     }
-
-    #shownav:checked  ~ nav{
+    #shownav:checked~nav {
         max-height: 0;
         opacity: 0;
     }
-
-    #shownav:checked  ~ nav a{
+    #shownav:checked~nav a {
         padding: 0 1em;
     }
-
-    .desktop{
+    .desktop {
         display: none;
     }
 }
 
 @media only screen and (min-width: 900px) {
-    header{
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     #sliders img {
         width: 100%;
         transform: none;
     }
-
-    header .bar{
+    header .bar {
         border-bottom: none;
     }
-
-    header .hamburger{
+    header .hamburger {
         display: none;
     }
-
-    nav{
+    nav {
         display: block;
         opacity: 1;
         flex: 1;
@@ -307,16 +343,14 @@ header .hamburger div{
         justify-content: center;
         align-items: center;
     }
-
-    nav a{
+    nav a {
         text-align: center;
         width: unset;
         display: inline-block;
         margin: 0 1em;
         padding: 0.5em 0;
     }
-
-    nav a::after{
+    nav a::after {
         border-bottom: 0.15em solid;
         content: "";
         position: absolute;
@@ -331,23 +365,24 @@ header .hamburger div{
         opacity: 0;
         border-radius: 0.1em;
     }
-
-    nav a:not(.bigbutton):hover::after, nav a.current::after{
+    nav a:not(.bigbutton):hover::after, nav a.current::after {
         width: 100%;
         left: 0;
         opacity: 1;
     }
-
-    .mobile{
+    .mobile {
         display: none;
     }
-
-    .items{
+    .items {
         margin: 1em auto;
         flex-direction: row;
     }
-
-    .items div{
+    .items div {
         max-width: 15em;
+    }
+    .row {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-gap: 2rem;
     }
 }
