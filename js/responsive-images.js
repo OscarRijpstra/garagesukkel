@@ -59,6 +59,30 @@ responsiveImages.map(function (container) {
                 ]
             });
             break;
+
+        case 'horizontal-rowimg-transparant':
+            renderImage(container, publicID, alt, imgClass, 30, ['webp', 'png'], {
+                mobile: [
+                    [700, 500],
+                    [800, 600],
+                    [900, 700],
+                    [1000, 800],
+                    [1100, 900],
+                    [1200, 1000],
+                    [1300, 1100],
+                    [1400, 1200],
+                ],
+                desktop: [
+                    [700, 500],
+                    [800, 600],
+                    [900, 700],
+                    [1000, 800],
+                    [1100, 900],
+                    [1200, 1000],
+                    [1300, 1100],
+                ]
+            });
+            break;
     }
 })
 

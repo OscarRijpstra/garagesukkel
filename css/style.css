@@ -141,7 +141,7 @@ header .hamburger div {
 
 .footer {
     margin: auto 1rem 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     display: block;
 }
@@ -232,7 +232,7 @@ header .hamburger div {
     display: flex;
     flex-wrap: wrap;
     max-width: 60em;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 .contact>div {
@@ -281,13 +281,17 @@ header .hamburger div {
     width: calc(100% - 2rem);
     margin: 3rem auto;
     max-width: 60rem;
+    display: grid;
+    grid-gap: 1rem;
 }
 
-.row__textblock {}
+.row__textblock {
+    order: 1;
+}
 
 .row__textblock-title {
     font-size: 1.8rem;
-    margin: 1rem 0;
+    margin: 0 0 1rem;
 }
 
 .row__textblock-text {
@@ -299,6 +303,10 @@ header .hamburger div {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 0.5rem 0;
+}
+
+.row__img {
+    order: 0;
 }
 
 @media only screen and (max-width: 899px) {
@@ -382,8 +390,17 @@ header .hamburger div {
     }
     .row {
         grid-template-columns: 1fr 1fr;
-        display: grid;
         grid-gap: 2rem;
+    }
+    .row__textblock-title {
+        margin: 1rem 0;
+    }
+    .row__textblock {
+        order: unset;
+    }
+    .row__img {
+        order: 0;
+        order: unset;
     }
 }
 
